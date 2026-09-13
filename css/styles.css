@@ -1,0 +1,73 @@
+.colored-box {
+  background-color: var(--box-bg-color, #FFEBD3);
+  padding: 10px;            
+  border-radius: 10px;
+}
+
+.colored-box > * {
+    position: relative; /* Ensures children can participate in stacking */
+    z-index: 1; /* Default stacking level for content inside */
+}
+
+.color-peach {
+  --box-bg-color: #FFEBD3;
+}
+
+.color-blue {
+  --box-bg-color: #67A2C5; /* Example light blue */
+}
+
+.color-white {
+  --box-bg-color: #FFFFFF;
+}
+
+.container {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.section-container {
+    position: relative;
+}
+
+.box-button-container {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+
+  bottom: -14px;
+  right: 8px;
+  gap: 6px;
+}
+
+.box-button {
+  font-weight: bold;
+  font-size: 15px;
+  color: black;
+  background-color: #FFB6A6;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.h2-size-box-title {
+  --box-title-font-size: 25px
+}
+
+.box-title {
+  /* Removed absolute positioning. This allows the title to flow naturally above the box. */
+  font-weight: bold;
+  font-size: var(--box-title-font-size, 18px);
+  display: block; /* Ensure it takes up its own line and respects block flow */
+  margin-bottom: -4px; /* Add space between the title and the box */
+  margin-left: 5px;
+  z-index: 2;
+}
+
+body {
+    font-family: "Atkinson Hyperlegible", sans-serif; /* Replace "Your Custom Font Name" with the actual font name */
+}
+
+@font-face {
+    font-family: 'Atkinson Hyperlegible';
+    src: url('../fonts/Atkinson Hyperlegible Next/AtkinsonHyperlegibleNext-Regular.otf') format('opentype');
+}
