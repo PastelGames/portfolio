@@ -7,48 +7,86 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>Pastel Games &lt;3</h1>
-    <p>Technical Artist and Game Developer</p>
-    <div class="container">
-        <span class="box-title">About Me</span>
-        <div class="colored-box">
-            Hi visitor! My name is El and I’m super passionate about expressing myself through mathematics, game development/design, and programming. I particularly excel in gameplay programming techniques. I am also a graduate of VCU with a Bachelor's Degree in Interdisciplinary Studies: Game Development & Design and founder of Game Creators Coalition. Enjoy your time here and check out some of my work! Take care!
+    <title>Pastel Games &lt;3</title>
+    <h1 style="font-size: 6vw;">Pastel Games &lt;3</h1>
+    <h2>Technical Artist and Game Developer</h2>
+    <div class="section-container" style="padding-bottom: 20px;">
+        <span class="box-title h2-size-box-title">About Me</span>
+        <div class="colored-box color-blue">
+            Hi visitor! My name is El and I'm super passionate about expressing myself through mathematics, game development/design, and programming. I particularly interested in gameplay programming techniques. I am also a graduate of VCU with a Bachelor's Degree in Interdisciplinary Studies: Game Development & Design and founder of Game Creators Coalition. Enjoy your time here and check out some of my work! Take care!
         </div>
     </div>
 
     <div class="section-container">
         <span class="box-title h2-size-box-title">Games</span>
+
         <div class="colored-box color-blue">
             <div class="container">
-                <span class="box-title">Mannequin Mayhem</span>
-                <div class="colored-box color-peach">
-                    Join your friends for an online competitive FPS zombie experience. Survive hordes of mannequins or play as a mannequin and sabotage the survivors.
-                </div>
-            </div>
-            
-            <div class="container">
-                <span class="box-title">The Arkham Asylum Files: Panic in Gotham City</span>
-                <div class="colored-box color-peach">
-                    Immerse yourselves in the world of Batman and Harley Quinn, as Gotham City comes to life with the amazing magic of mobile augmented reality.
-
-                    <div class="box-button-container">
-                        <a class="box-button" href="https://infiniterabbitholes.com">Buy Now</a>
+                <span class="box-title">Mannequin Massacre (Coming Soon)</span>
+                <div class="colored-box game-card color-peach">
+                    <div class="game-description colored-box color-white">
+                        Join your friends for an online competitive FPS zombie experience. Survive hordes of mannequins or play as a mannequin and sabotage the survivors.
                     </div>
                 </div>
             </div>
             
             <div class="container">
-                <span class="box-title">Off the Ringer</span>
-                <div class="colored-box color-peach">
-                    The phones never stop ringing! Reconnect callers with their lost objects in this mini Swiss design-inspired puzzle game.
+                <span class="box-title">The Arkham Asylum Files: Panic in Gotham City</span>
+                <div class="colored-box color-peach game-card">
+                    <div class="game-media colored-box color-white">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/trckZ3_x7Vk?si=qknYOIFF-6GcCJkk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="game-description colored-box color-white">
+                        Immerse yourselves in the world of Batman and Harley Quinn, as Gotham City comes to life with the amazing magic of mobile augmented reality.
+                    </div>
+                    <div class="box-button-container">
+                        <a class="box-button" href="https://infiniterabbitholes.com">Buy Now</a>
+                    </div>
+                </div>
+            </div>
 
+            <div class="container">
+                <span class="box-title">Off the Ringer</span>
+                <div class="colored-box color-peach game-card">
+                    <div class="game-media colored-box color-white">
+                        <img src="images/off_the_ringer.gif" alt="Off the Ringer game screenshot">
+                    </div>
+                    <div class="game-description colored-box color-white">
+                        The phones never stop ringing! Reconnect callers with their lost objects in this mini Swiss design-inspired puzzle game.
+                    </div>
                     <div class="box-button-container">
                         <a class="box-button" href="https://v3.globalgamejam.org/2021/games/untitled-phone-game-2">Play Now</a>
                         <a class="box-button" href="https://github.com/PastelGames/OffTheRinger">View Source Code</a>
                     </div>
                 </div>
             </div>
+            
         </div>
+    </div>
+
+    <div class="section-container" style="padding-bottom: 20px;">
+        <span class="box-title h2-size-box-title">Get in Touch</span>
+            <div class="colored-box color-blue">
+                <div class="colored-box color-white">
+                    <!-- Cal inline embed code begins -->
+                    <div style="width:100%;height:50%;overflow:scroll;border-radius: 10px;" id="my-cal-inline-30-minutes-with-el"></div>
+                    <script type="text/javascript">
+                    (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+                    Cal("init", "30-minutes-with-el", {origin:"https://app.cal.com"});
+                    Cal.config = Cal.config || {};
+                    Cal.config.forwardQueryParams = true;
+
+                    Cal.ns["30-minutes-with-el"]("inline", {
+                        elementOrSelector:"#my-cal-inline-30-minutes-with-el",
+                        config: {"layout":"week_view","useSlotsViewOnSmallScreen":"true"},
+                        calLink: "pastelgames/30-minutes-with-el",
+                    });
+
+                    Cal.ns["30-minutes-with-el"]("ui", {"cssVarsPerTheme":{"light":{"cal-brand":"#fcc1c9"},"dark":{"cal-brand":"#ec8888"}},"hideEventTypeDetails":false,"layout":"week_view"});
+                    </script>
+                    <!-- Cal inline embed code ends -->
+                </div>
+            </div>
     </div>
 
     
